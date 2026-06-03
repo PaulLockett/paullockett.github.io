@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local preview
+.cache/
+node_modules/
+
+# Drafts / scratch
+_drafts/
+_scratch/
+*.bak

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paul Lockett — Research & Reports</title>
+<meta name="description" content="Self-published research and analysis by Paul Lockett. Alabama environmental data, historical OSINT, infrastructure, and adjacent work.">
+<meta name="author" content="Paul Lockett">
+<style>
+  :root {
+    --ink:        #1a2330;
+    --ink-soft:   #4a5462;
+    --paper:      #fbf8f3;
+    --paper-2:    #f3ede1;
+    --rule:       #d9d2c3;
+    --navy:       #1f4e79;
+    --navy-deep:  #143559;
+    --burgundy:   #7a1f2b;
+    --olive:      #5a6b3e;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--paper); color: var(--ink); }
+  body {
+    font-family: "Iowan Old Style", "Charter", "Georgia", "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--navy); text-decoration: none; border-bottom: 1px solid rgba(31,78,121,0.25); }
+  a:hover { color: var(--burgundy); border-bottom-color: var(--burgundy); }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 28px 96px; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 22px; margin-bottom: 36px; }
+  .masthead {
+    font-family: "Iowan Old Style", "Charter", "Georgia", serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin: 0 0 6px 0;
+  }
+  .tagline {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0;
+  }
+  .lead {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--ink);
+    margin: 0 0 40px 0;
+  }
+  .lead em { color: var(--ink-soft); font-style: italic; }
+  h2.section {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 0 0 18px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .reports { list-style: none; padding: 0; margin: 0 0 56px 0; }
+  .report {
+    padding: 22px 0 24px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .report:last-child { border-bottom: none; }
+  .report .meta {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    color: var(--ink-soft);
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+  }
+  .report .meta .tag {
+    display: inline-block;
+    background: var(--paper-2);
+    color: var(--navy-deep);
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-right: 8px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .report h3 {
+    font-size: 22px;
+    line-height: 1.25;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .report h3 a { color: var(--ink); border-bottom: none; }
+  .report h3 a:hover { color: var(--burgundy); }
+  .report .desc {
+    margin: 6px 0 10px 0;
+    color: var(--ink);
+  }
+  .report .links {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    color: var(--ink-soft);
+  }
+  .report .links a { margin-right: 14px; }
+  .placeholder {
+    color: var(--ink-soft);
+    font-style: italic;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    color: var(--ink-soft);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  footer a { color: var(--ink-soft); border-bottom-color: rgba(74,84,98,0.3); }
+  @media (max-width: 600px) {
+    .wrap { padding: 40px 20px 72px; }
+    .masthead { font-size: 26px; }
+    .lead { font-size: 16px; }
+    .report h3 { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1 class="masthead">Paul Lockett</h1>
+  <p class="tagline">Research &middot; Reports &middot; Data Engineering</p>
+</header>
+
+<p class="lead">
+Self-published research and analysis. Most of the work here uses public records and open data — Alabama environmental filings, historical OSINT, infrastructure datasets — assembled at scale with engineering tooling and presented as long-form reports. <em>Each report below is a standalone document; underlying data is included where releasable.</em>
+</p>
+
+<h2 class="section">Reports</h2>
+
+<ul class="reports">
+
+  <li class="report">
+    <div class="meta">
+      <span class="tag">Environmental</span>
+      <span>April 28, 2026 &middot; ~30 pages</span>
+    </div>
+    <h3><a href="adem-construction-decade/">Alabama Construction Stormwater Permit Analysis: 2009&ndash;2026</a></h3>
+    <p class="desc">
+      Seventeen years of NPDES Construction General Permit (ALR100000) coverage, inspections, and enforcement actions from ADEM's eFile and Laserfiche systems. 22,325 sites, 33,205 inspections, 123,424 documents &mdash; analyzed end-to-end to surface the systemic enforcement gap.
+    </p>
+    <p class="links">
+      <a href="adem-construction-decade/">Read report</a>
+      <a href="adem-construction-decade/Mobile_Baykeeper_Report.pdf">PDF</a>
+      <a href="adem-construction-decade/sites_alltime.csv">Sites CSV</a>
+      <a href="adem-construction-decade/companies_alltime.csv">Companies CSV</a>
+      <a href="adem-construction-decade/bmp_findings_alltime.csv">BMP findings CSV</a>
+    </p>
+  </li>
+
+  <!--
+    To add a new report:
+    1. Create a sibling folder, e.g. /africatown-land-records/
+    2. Drop the report's HTML inside as index.html (plus any sibling assets)
+    3. Copy the <li class="report"> block above and update the meta / title / links
+  -->
+
+  <li class="placeholder">More reports coming soon.</li>
+
+</ul>
+
+<footer>
+  <div>&copy; 2026 Paul Lockett &middot; <a href="https://github.com/PaulLockett">github.com/PaulLockett</a></div>
+  <div>Mobile, Alabama</div>
+</footer>
+
+</div>
+</body>
+</html>
