@@ -1,0 +1,462 @@
+{
+  "generated_for": "Unlock Alabama — Builder program",
+  "as_of": "2026-06-04",
+  "sources": {
+    "mailchimp": {
+      "people": 211,
+      "events": 1766
+    },
+    "monday": {
+      "people": 248,
+      "events": 374
+    },
+    "skool": {
+      "people": 195,
+      "events": 195
+    },
+    "luma": {
+      "people": 74,
+      "events": 74
+    }
+  },
+  "luma": {
+    "events": 7,
+    "total_rsvps": 74,
+    "distinct_registrants": 23,
+    "checked_in": 0,
+    "repeat_attendees": 13,
+    "rsvps_by_event": {
+      "week 4 launching": 17,
+      "week 5 user interviews": 10,
+      "week 6 analytics": 10,
+      "week 7 storytelling": 10,
+      "week 8 demo day": 10,
+      "build your site or app with ai": 9,
+      "special in person event": 8
+    }
+  },
+  "luma_funnel": {
+    "RSVP'd": 23,
+    "Checked in": 0,
+    "Repeat (≥2 events)": 13
+  },
+  "cohort_ladder": {
+    "Applied": 180,
+    "Accepted": 199,
+    "Joined Skool community": 192,
+    "Submitted weekly": 52
+  },
+  "accepted_split": {
+    "Builders": 177,
+    "Guides": 22
+  },
+  "reach_composition": {
+    "Applicants": 180,
+    "Skool community (didn't apply)": 65,
+    "Anonymous weekly submitters": 17,
+    "Newsletter subscribers": 14,
+    "Event RSVPs only": 1
+  },
+  "data_notes": [
+    "“Total reached” (277) counts everyone who appears in ANY of the four systems, deduplicated — it is not the applicant pool. The cohort ladder (applied → accepted → in community → submitting) is the program funnel; the rest are audience and subscribers who never applied.",
+    "Accepted (199) = 177 builders + 22 guides. Guides don’t use the builder application form, so accepted can exceed applied.",
+    "Skool exposes no member emails, so Skool members are matched to the rest by name. The community count here (192) can differ by a few from Skool’s own listing due to identical-name collisions; a re-pull keyed on the Skool member id is pending.",
+    "Luma currently includes only the events visible on the calendar (7, mostly upcoming); past-week events (kickoff / Weeks 1–3) are not yet pulled, so event attendance is understated."
+  ],
+  "totals": {
+    "unique_people_all_sources": 277,
+    "applicants_unique": 180,
+    "accepted": 199,
+    "acceptance_email_sent": 197,
+    "acceptance_pending": 2,
+    "guides": 24,
+    "skool_members_unique": 192,
+    "submitters_distinct": 52,
+    "mailchimp_total": 207
+  },
+  "roles": {
+    "Builder": 177,
+    "Audience": 76,
+    "Guide": 24
+  },
+  "aarr": {
+    "funnel": {
+      "Awareness": 260,
+      "Engagement": 187,
+      "Activation": 187,
+      "Retention": 167
+    },
+    "retention_by_axis": {
+      "awareness": 13,
+      "engagement": 166,
+      "activation": 11
+    },
+    "score_distribution": {
+      "0–2": 78,
+      "2–4": 4,
+      "4–6": 12,
+      "6–8": 20,
+      "8–10": 4,
+      "10–12": 42,
+      "12+": 117
+    }
+  },
+  "cohort_funnel": {
+    "Accepted": 199,
+    "Joined Skool": 137,
+    "Submitted ≥1 weekly": 52
+  },
+  "in_school_breakdown": {
+    "In Skool": 137,
+    "Not in Skool": 62
+  },
+  "acceptance_batches": [
+    {
+      "title": "Accepted Builder",
+      "send_time": "2026-04-29T15:00:00+00:00",
+      "sent": 99,
+      "opened": 76,
+      "open_rate": 0.7677
+    },
+    {
+      "title": "Accepted Builder 5/4",
+      "send_time": "2026-05-04T17:25:56+00:00",
+      "sent": 36,
+      "opened": 25,
+      "open_rate": 0.6944
+    },
+    {
+      "title": "Accepted Builder 5/11",
+      "send_time": "2026-05-11T19:50:47+00:00",
+      "sent": 25,
+      "opened": 16,
+      "open_rate": 0.64
+    },
+    {
+      "title": "Accepted Guide 2",
+      "send_time": "2026-05-11T20:01:06+00:00",
+      "sent": 22,
+      "opened": 15,
+      "open_rate": 0.6818
+    },
+    {
+      "title": "Accepted Builder 5/19",
+      "send_time": "2026-05-19T13:22:49+00:00",
+      "sent": 10,
+      "opened": 4,
+      "open_rate": 0.4
+    },
+    {
+      "title": "Accepted Builder 5/26",
+      "send_time": "2026-05-26T18:01:11+00:00",
+      "sent": 12,
+      "opened": 8,
+      "open_rate": 0.6667
+    }
+  ],
+  "open_rate_by_segment": {
+    "(untagged)": 0.0,
+    "Builder": 0.5919,
+    "Guide": 0.6077
+  },
+  "acquisition_channels": {
+    "Not specified": 61,
+    "Other / personal contact": 47,
+    "Instagram": 33,
+    "Friend / referral": 13,
+    "Email / newsletter": 8,
+    "Facebook": 7,
+    "LinkedIn": 7,
+    "Chamber of Commerce": 2,
+    "Search": 1,
+    "Event": 1
+  },
+  "describes_you": {
+    "I’m already building something and want to take it further": 86,
+    "I have a business idea I want to bring to life": 71,
+    "I’m an employee who wants to think more creatively": 23
+  },
+  "ai_opinion": {
+    "I love it and use it all the time": 92,
+    "I like and I use it sometimes": 68,
+    "Other": 12,
+    "I don't like it and think its unethical": 5,
+    "I haven't used it and don't think much about it": 3
+  },
+  "skool_timeline": [
+    {
+      "week": "2026-W03",
+      "joins": 3,
+      "cumulative": 3
+    },
+    {
+      "week": "2026-W04",
+      "joins": 5,
+      "cumulative": 8
+    },
+    {
+      "week": "2026-W05",
+      "joins": 7,
+      "cumulative": 15
+    },
+    {
+      "week": "2026-W06",
+      "joins": 9,
+      "cumulative": 24
+    },
+    {
+      "week": "2026-W07",
+      "joins": 4,
+      "cumulative": 28
+    },
+    {
+      "week": "2026-W08",
+      "joins": 9,
+      "cumulative": 37
+    },
+    {
+      "week": "2026-W10",
+      "joins": 11,
+      "cumulative": 48
+    },
+    {
+      "week": "2026-W11",
+      "joins": 8,
+      "cumulative": 56
+    },
+    {
+      "week": "2026-W12",
+      "joins": 7,
+      "cumulative": 63
+    },
+    {
+      "week": "2026-W13",
+      "joins": 12,
+      "cumulative": 75
+    },
+    {
+      "week": "2026-W14",
+      "joins": 10,
+      "cumulative": 85
+    },
+    {
+      "week": "2026-W15",
+      "joins": 5,
+      "cumulative": 90
+    },
+    {
+      "week": "2026-W16",
+      "joins": 8,
+      "cumulative": 98
+    },
+    {
+      "week": "2026-W17",
+      "joins": 8,
+      "cumulative": 106
+    },
+    {
+      "week": "2026-W18",
+      "joins": 18,
+      "cumulative": 124
+    },
+    {
+      "week": "2026-W19",
+      "joins": 16,
+      "cumulative": 140
+    },
+    {
+      "week": "2026-W20",
+      "joins": 13,
+      "cumulative": 153
+    },
+    {
+      "week": "2026-W21",
+      "joins": 32,
+      "cumulative": 185
+    },
+    {
+      "week": "2026-W22",
+      "joins": 6,
+      "cumulative": 191
+    },
+    {
+      "week": "2026-W23",
+      "joins": 1,
+      "cumulative": 192
+    }
+  ],
+  "engagement_matrix": {
+    "base": 199,
+    "in_skool_submitted": 31,
+    "in_skool_not_submitted": 98,
+    "not_skool_submitted": 21,
+    "not_skool_not_submitted": 49
+  },
+  "action_segments": {
+    "Accepted, not in Skool": 62,
+    "In Skool, never submitted": 106,
+    "Fully engaged (Skool + submitted)": 31,
+    "Submitted but not in Skool": 21,
+    "In Skool, didn't apply": 65,
+    "Acceptance email pending": 2
+  },
+  "text_aggregates": {
+    "responses_by_field": {
+      "proud_of": 185,
+      "feedback": 34,
+      "progress": 18
+    },
+    "avg_words_by_field": {
+      "proud_of": 72.4,
+      "feedback": 31.7,
+      "progress": 42.6
+    },
+    "total_words": 8925,
+    "top_terms": [
+      [
+        "proud",
+        85
+      ],
+      [
+        "how",
+        67
+      ],
+      [
+        "building",
+        61
+      ],
+      [
+        "app",
+        56
+      ],
+      [
+        "one",
+        55
+      ],
+      [
+        "made",
+        54
+      ],
+      [
+        "what",
+        50
+      ],
+      [
+        "people",
+        48
+      ],
+      [
+        "built",
+        47
+      ],
+      [
+        "business",
+        46
+      ],
+      [
+        "time",
+        45
+      ],
+      [
+        "build",
+        43
+      ],
+      [
+        "real",
+        40
+      ],
+      [
+        "through",
+        40
+      ],
+      [
+        "like",
+        36
+      ],
+      [
+        "i'm",
+        36
+      ],
+      [
+        "work",
+        35
+      ],
+      [
+        "created",
+        34
+      ],
+      [
+        "where",
+        34
+      ],
+      [
+        "idea",
+        33
+      ],
+      [
+        "create",
+        32
+      ],
+      [
+        "project",
+        30
+      ],
+      [
+        "first",
+        30
+      ],
+      [
+        "creating",
+        29
+      ],
+      [
+        "all",
+        29
+      ],
+      [
+        "when",
+        28
+      ],
+      [
+        "designed",
+        27
+      ],
+      [
+        "started",
+        27
+      ],
+      [
+        "things",
+        27
+      ],
+      [
+        "using",
+        26
+      ]
+    ]
+  },
+  "_notes": {},
+  "_meta": {
+    "n_people": 277,
+    "n_input_people": 728,
+    "n_events": 2409,
+    "connectors": {
+      "mailchimp": {
+        "people": 211,
+        "events": 1766
+      },
+      "monday": {
+        "people": 248,
+        "events": 374
+      },
+      "skool": {
+        "people": 195,
+        "events": 195
+      },
+      "luma": {
+        "people": 74,
+        "events": 74
+      }
+    }
+  }
+}

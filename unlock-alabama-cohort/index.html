@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unlock Alabama — Builder Cohort Analytics</title>
+<meta name="description" content="The Unlock Alabama builder program funnel — applied, accepted, in community, submitting — plus the full reach around it, resolved across Mailchimp, Monday, Skool, and Luma and sorted onto the Awareness → Engagement → Activation → Retention growth axes.">
+<meta name="author" content="Paul Lockett">
+<style>
+  :root {
+    --ink:#1a2330; --ink-soft:#4a5462; --paper:#fbf8f3; --paper-2:#f3ede1; --rule:#d9d2c3;
+    --navy:#1f4e79; --navy-deep:#143559; --burgundy:#7a1f2b; --olive:#5a6b3e; --orange:#c1531e; --green:#3f8a5c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin:0; padding:0; background:var(--paper); color:var(--ink); }
+  body { font-family:"Iowan Old Style","Charter","Georgia","Times New Roman",serif; font-size:17px; line-height:1.55; -webkit-font-smoothing:antialiased; }
+  a { color:var(--navy); text-decoration:none; border-bottom:1px solid rgba(31,78,121,.25); }
+  a:hover { color:var(--burgundy); border-bottom-color:var(--burgundy); }
+  .wrap { max-width:820px; margin:0 auto; padding:48px 28px 96px; }
+  .home { font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif; font-size:13px; letter-spacing:.04em; }
+  header { border-bottom:1px solid var(--rule); padding-bottom:22px; margin:24px 0 34px; }
+  .kicker { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--orange); margin:0 0 8px; }
+  h1 { font-size:33px; font-weight:700; letter-spacing:-.01em; line-height:1.15; margin:0 0 10px; }
+  .subtitle { color:var(--ink-soft); font-size:17px; font-style:italic; margin:0; }
+  .asof { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:var(--ink-soft); margin:10px 0 0; }
+  .lead { font-size:18px; line-height:1.62; margin:0 0 30px; }
+  .lead em { color:var(--ink-soft); }
+  h2.section { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:12px; font-weight:600; letter-spacing:.14em; text-transform:uppercase; color:var(--ink-soft); margin:48px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--rule); }
+  p { margin:0 0 14px; }
+  .kpis { display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:12px; margin:6px 0 8px; }
+  .kpi { background:#fff; border:1px solid var(--rule); border-radius:6px; padding:16px; }
+  .kpi .num { font-size:34px; font-weight:700; color:var(--navy); line-height:1; letter-spacing:-.02em; }
+  .kpi .lab { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:12px; color:var(--ink-soft); margin-top:6px; line-height:1.3; }
+  .kpi .sub { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:11px; color:var(--olive); margin-top:3px; }
+  .reach { background:#fff; border:1px solid var(--rule); border-left:4px solid var(--orange); border-radius:6px; padding:16px 18px; margin:14px 0 4px; }
+  .reach .head { display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
+  .reach .big { font-size:30px; font-weight:700; color:var(--orange); line-height:1; }
+  .reach .lab { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:13px; color:var(--ink-soft); }
+  .comp { list-style:none; padding:0; margin:12px 0 0; font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:13.5px; }
+  .comp li { display:flex; align-items:center; gap:10px; padding:3px 0; }
+  .comp .bar { height:11px; background:#e6ddcb; border-radius:3px; min-width:2px; }
+  .comp .bar.cohort { background:var(--navy); }
+  .comp .n { width:38px; text-align:right; color:var(--ink); font-variant-numeric:tabular-nums; }
+  .comp .t { color:var(--ink-soft); }
+  .aarr { display:grid; grid-template-columns:repeat(4,1fr); gap:10px; margin:10px 0 6px; }
+  .axis { border-radius:6px; padding:14px; color:#fff; }
+  .axis:nth-child(1){background:#7A8C99;} .axis:nth-child(2){background:#E0A24A;}
+  .axis:nth-child(3){background:var(--orange);} .axis:nth-child(4){background:var(--green);}
+  .axis .n { font-size:28px; font-weight:700; line-height:1; }
+  .axis .t { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:13px; font-weight:600; margin-top:6px; }
+  .axis .d { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:11px; opacity:.9; margin-top:2px; }
+  figure { margin:18px 0 8px; }
+  figure img { width:100%; height:auto; display:block; border:1px solid var(--rule); border-radius:6px; background:#fff; }
+  figcaption { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:13px; color:var(--ink-soft); margin-top:8px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; margin:14px 0 6px; font-family:-apple-system,BlinkMacSystemFont,sans-serif; }
+  th { background:var(--navy); color:#fff; padding:8px 10px; text-align:left; font-weight:600; font-size:13px; }
+  td { padding:7px 10px; border-bottom:1px solid var(--rule); }
+  tr:nth-child(even) td { background:#fff; }
+  td.r, th.r { text-align:right; }
+  .notes { background:var(--paper-2); border:1px solid var(--rule); border-radius:6px; padding:6px 20px; margin:14px 0; }
+  .notes li { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:13.5px; line-height:1.5; color:var(--ink); margin:10px 0; }
+  .method { background:var(--paper-2); border:1px solid var(--rule); border-radius:6px; padding:16px 18px; margin:16px 0; font-size:14px; line-height:1.55; }
+  .method b { color:var(--navy-deep); }
+  .downloads { font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:14px; }
+  .downloads a { margin-right:16px; }
+  footer { margin-top:60px; padding-top:22px; border-top:1px solid var(--rule); font-family:-apple-system,BlinkMacSystemFont,sans-serif; font-size:13px; color:var(--ink-soft); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  footer a { color:var(--ink-soft); border-bottom-color:rgba(74,84,98,.3); }
+  @media (max-width:640px){ .wrap{padding:32px 18px 72px;} h1{font-size:26px;} .aarr{grid-template-columns:repeat(2,1fr);} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="home"><a href="../">&larr; Paul Lockett &middot; Research &amp; Reports</a></div>
+
+  <header>
+    <p class="kicker">Cohort Analytics &middot; Venture Studio</p>
+    <h1>Unlock Alabama — Builder Cohort</h1>
+    <p class="subtitle">The program funnel, and the full reach around it.</p>
+    <p class="asof">As of <span data-bind="as_of">2026-06-04</span> &middot; resolved across Mailchimp, Monday, Skool &amp; Luma</p>
+  </header>
+
+  <p class="lead">
+    Unlock Alabama runs an eight-week program for Alabamians building something new.
+    <strong><span data-bind="totals.applicants_unique">180</span> applied</strong> through the application form;
+    <strong><span data-bind="totals.accepted">199</span> were accepted</strong>
+    (<span data-bind="acc.builders">177</span> builders + <span data-bind="acc.guides">22</span> guides);
+    <strong><span data-bind="totals.skool_members_unique">192</span> joined the community</strong>;
+    <strong><span data-bind="totals.submitters_distinct">52</span> have turned in weekly work.</strong>
+    Around that cohort, the program has <em>reached</em> a wider audience — counted carefully below.
+  </p>
+
+  <!-- Cohort KPIs -->
+  <h2 class="section">The cohort funnel</h2>
+  <div class="kpis">
+    <div class="kpi"><div class="num" data-bind="totals.applicants_unique">180</div><div class="lab">Applied <span style="opacity:.7">(form)</span></div></div>
+    <div class="kpi"><div class="num" data-bind="totals.accepted">199</div><div class="lab">Accepted</div><div class="sub" data-bind="acc.note">177 builders · 22 guides</div></div>
+    <div class="kpi"><div class="num" data-bind="totals.skool_members_unique">192</div><div class="lab">In the Skool community</div></div>
+    <div class="kpi"><div class="num" data-bind="totals.submitters_distinct">52</div><div class="lab">Submitted weekly work</div></div>
+  </div>
+  <figure><img src="01_cohort_funnel.png" alt="Cohort funnel: accepted → joined Skool → submitted"></figure>
+
+  <!-- Reach / what 277 is -->
+  <h2 class="section">Total reach — who the wider number is</h2>
+  <p>
+    Across all four systems the program has touched
+    <strong><span data-bind="totals.unique_people_all_sources">277</span> unique people</strong>,
+    deduplicated. That figure is <em>reach</em>, not the cohort — most of the gap is people who joined the
+    free Skool community or the mailing list without ever applying. Here's the exact composition:
+  </p>
+  <div class="reach">
+    <div class="head"><span class="big" data-bind="totals.unique_people_all_sources">277</span>
+      <span class="lab">total people reached &middot; <span data-bind="reach.audience">97</span> of them never applied</span></div>
+    <ul class="comp" id="composition"></ul>
+  </div>
+
+  <!-- AARR -->
+  <h2 class="section">Engagement — the growth funnel</h2>
+  <p>
+    Every touch from every source maps to one axis, so this measures engagement across <em>everyone reached</em>,
+    not just applicants. <strong>Awareness</strong> = viewed something (on the list, joined Skool, RSVP'd);
+    <strong>Engagement</strong> = interacted (opened an email, commented on a peer, checked in);
+    <strong>Activation</strong> = created something (applied, submitted, posted);
+    <strong>Retention</strong> = repeated one of those across ≥2 weeks or events.
+  </p>
+  <div class="aarr">
+    <div class="axis"><div class="n" data-bind="aarr.funnel.Awareness">260</div><div class="t">Awareness</div><div class="d">viewed something</div></div>
+    <div class="axis"><div class="n" data-bind="aarr.funnel.Engagement">187</div><div class="t">Engagement</div><div class="d">interacted</div></div>
+    <div class="axis"><div class="n" data-bind="aarr.funnel.Activation">187</div><div class="t">Activation</div><div class="d">created something</div></div>
+    <div class="axis"><div class="n" data-bind="aarr.funnel.Retention">167</div><div class="t">Retention</div><div class="d">repeated over time</div></div>
+  </div>
+  <figure><img src="00_aarr_funnel.png" alt="Awareness → Engagement → Activation → Retention funnel"></figure>
+  <p>
+    Retention splits across the axes — <span data-bind="ret.engagement">166</span> by repeat email engagement,
+    <span data-bind="ret.awareness">13</span> by RSVPing to two or more Luma events, and
+    <span data-bind="ret.activation">11</span> by submitting weekly work in multiple weeks. That last group —
+    builders who keep shipping — is the one a cohort program lives or dies on.
+  </p>
+
+  <!-- Acceptance -->
+  <h2 class="section">Acceptance &amp; reach</h2>
+  <p>
+    Acceptance is a rolling decision sent as "Congrats, You're In!" email batches.
+    <strong><span data-bind="totals.acceptance_email_sent">197</span></strong> builders and guides have a
+    confirmed acceptance email; <span data-bind="totals.acceptance_pending">2</span> are selected but waiting
+    on the next batch.
+  </p>
+  <table id="batches"><thead><tr><th>Acceptance batch</th><th>Date</th><th class="r">Sent</th><th class="r">Opened</th><th class="r">Open rate</th></tr></thead><tbody></tbody></table>
+  <figure><img src="02_acceptance_open_rate_by_batch.png" alt="Acceptance batches — reach and open rate"></figure>
+  <figure><img src="09_open_rate_by_segment.png" alt="Email open rate by audience segment"></figure>
+  <p id="seg-note"></p>
+
+  <!-- Engagement detail -->
+  <h2 class="section">Where the cohort stands</h2>
+  <figure><img src="05_engagement_matrix.png" alt="Engagement matrix: Skool membership × weekly submission"></figure>
+  <figure><img src="03_action_segments.png" alt="Outreach segments by action"><figcaption>Actionable list sizes — who to nudge, and how.</figcaption></figure>
+  <figure><img src="10_engagement_score_distribution.png" alt="Engagement-score distribution"><figcaption>A composite per-person score (Awareness 1 · Engagement 2 · Activation 3 · Retention +4) — a bimodal cohort.</figcaption></figure>
+
+  <!-- Community + events -->
+  <h2 class="section">Community &amp; events</h2>
+  <figure><img src="06_skool_growth_timeline.png" alt="Skool community growth over time"></figure>
+  <figure><img src="12_luma_funnel.png" alt="Luma event funnel: RSVP → checked in → repeat"><figcaption>Partial — only the events currently on the calendar; past weeks aren't pulled yet (see data notes). Check-ins read zero where events are still upcoming.</figcaption></figure>
+  <table id="luma-events"><thead><tr><th>Luma event</th><th class="r">RSVPs</th></tr></thead><tbody></tbody></table>
+
+  <!-- Who applied -->
+  <h2 class="section">Who's in the cohort</h2>
+  <figure><img src="04_role_distribution.png" alt="Role distribution"></figure>
+  <figure><img src="07_applicant_profile.png" alt="Applicant self-description and AI opinion"></figure>
+  <figure><img src="08_acquisition_channels.png" alt="Where applicants came from"></figure>
+  <figure><img src="11_text_top_terms.png" alt="Most common terms in applicant and progress text"></figure>
+
+  <!-- Data notes -->
+  <h2 class="section">Data notes &amp; how this is built</h2>
+  <ul class="notes" id="data-notes"></ul>
+  <div class="method">
+    <p style="margin-top:0">
+      Four connectors each emit the same record shape; a source-agnostic union-find resolves one person across
+      all of them by <b>email or a two-token name key</b>. A declarative table maps each signal to its growth
+      axis, so adding a source or a signal never touches the engine.
+    </p>
+    <p style="margin-bottom:0" id="sources-line">
+      <b>Sources:</b> Mailchimp (live API), Monday boards (API/MCP), Skool (member roster), Luma (event guests).
+    </p>
+  </div>
+  <p class="downloads">
+    <b>Data:</b>
+    <a href="participants.csv">participants.csv</a>
+    <a href="metrics.json">metrics.json</a>
+  </p>
+
+  <footer>
+    <div>&copy; 2026 Paul Lockett &middot; <a href="https://github.com/PaulLockett">github.com/PaulLockett</a></div>
+    <div>Mobile, Alabama</div>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  function get(o, p) { return p.split('.').reduce(function (a, k) { return a == null ? a : a[k]; }, o); }
+  function fmt(v) { return (typeof v === 'number') ? v.toLocaleString() : v; }
+
+  fetch('./metrics.json').then(function (r) { return r.json(); }).then(function (m) {
+    var accB = get(m, 'accepted_split.Builders'), accG = get(m, 'accepted_split.Guides');
+    var total = get(m, 'totals.unique_people_all_sources'), applied = get(m, 'totals.applicants_unique');
+    document.querySelectorAll('[data-bind]').forEach(function (el) {
+      var k = el.getAttribute('data-bind'), v;
+      if (k === 'acc.builders') v = accB;
+      else if (k === 'acc.guides') v = accG;
+      else if (k === 'acc.note') v = accB + ' builders · ' + accG + ' guides';
+      else if (k === 'reach.audience') v = (total != null && applied != null) ? (total - applied) : null;
+      else if (k === 'ret.engagement') v = get(m, 'aarr.retention_by_axis.engagement') || 0;
+      else if (k === 'ret.awareness') v = get(m, 'aarr.retention_by_axis.awareness') || 0;
+      else if (k === 'ret.activation') v = get(m, 'aarr.retention_by_axis.activation') || 0;
+      else v = get(m, k);
+      if (v != null) el.textContent = fmt(v);
+    });
+
+    // reach composition bars
+    var comp = m.reach_composition || {};
+    var max = Math.max.apply(null, Object.keys(comp).map(function (k) { return comp[k]; }).concat([1]));
+    var ul = document.getElementById('composition');
+    Object.keys(comp).forEach(function (k) {
+      var n = comp[k], li = document.createElement('li');
+      var w = Math.max(2, Math.round(n / max * 240));
+      var cls = (k === 'Applicants') ? ' cohort' : '';
+      li.innerHTML = '<span class="n">' + n + '</span><span class="bar' + cls + '" style="width:' + w + 'px"></span><span class="t">' + k + '</span>';
+      ul.appendChild(li);
+    });
+
+    // acceptance batches
+    var tb = document.querySelector('#batches tbody');
+    (m.acceptance_batches || []).forEach(function (b) {
+      var d = (b.send_time || '').slice(0, 10);
+      var rate = (b.open_rate != null) ? Math.round(b.open_rate * 100) + '%' : '—';
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + (b.title || '') + '</td><td>' + d + '</td><td class="r">' + (b.sent != null ? b.sent : '') +
+        '</td><td class="r">' + (b.opened != null ? b.opened : '') + '</td><td class="r">' + rate + '</td>';
+      tb.appendChild(tr);
+    });
+
+    // open rate by segment
+    var seg = m.open_rate_by_segment || {}, parts = [];
+    if (seg.Builder != null) parts.push('Builders open at ' + Math.round(seg.Builder * 100) + '%');
+    if (seg.Guide != null) parts.push('guides at ' + Math.round(seg.Guide * 100) + '%');
+    if (parts.length) document.getElementById('seg-note').textContent = parts.join(', ') + '.';
+
+    // luma events
+    var lt = document.querySelector('#luma-events tbody'), byE = get(m, 'luma.rsvps_by_event') || {};
+    Object.keys(byE).forEach(function (name) {
+      var title = name.replace(/\b\w/g, function (c) { return c.toUpperCase(); });
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + title + '</td><td class="r">' + byE[name] + '</td>';
+      lt.appendChild(tr);
+    });
+    var L = m.luma || {};
+    if (L.distinct_registrants != null) {
+      var foot = document.createElement('tr');
+      foot.innerHTML = '<td><b>' + L.distinct_registrants + ' distinct registrants · ' + (L.repeat_attendees || 0) +
+        ' repeat (≥2 events)</b></td><td class="r"><b>' + (L.total_rsvps || 0) + '</b></td>';
+      lt.appendChild(foot);
+    }
+
+    // data notes
+    var dn = document.getElementById('data-notes');
+    (m.data_notes || []).forEach(function (note) {
+      var li = document.createElement('li'); li.textContent = note; dn.appendChild(li);
+    });
+
+    // sources line with live counts
+    var s = m.sources || {};
+    function c(k) { return s[k] ? s[k].people : '—'; }
+    var sl = document.getElementById('sources-line');
+    if (sl) sl.innerHTML = '<b>Sources:</b> Mailchimp (live API, ' + c('mailchimp') + ' members) · Monday boards (' +
+      c('monday') + ' records via API/MCP) · Skool (' + c('skool') + ' members) · Luma (' + c('luma') + ' guests).';
+  }).catch(function () {});
+})();
+</script>
+</body>
+</html>
